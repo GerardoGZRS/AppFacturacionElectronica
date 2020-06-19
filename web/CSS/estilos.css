@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header nav{
+    background: #333;
+    margin-bottom: 20px;
+    -webkit-transition:all ease .5s;
+    -o-transition:all ease .5s;
+    transition:all  ease .5s;
+}
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: dimgrey;
+    margin: auto;
+}
+.menu-fixed{
+    position: fixed;
+    margin: auto;
+    z-index: 1000;
+    top:0;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+.menu-fixed ul li a{
+    padding: 15px 20px;
+}
+
+.boton{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    float:right; 
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.caja{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.texto{
+    font-size: 15pt;
+    font-family: Arial;
+    margin-right: 30px;
+}
+
+
+.contenedor{
+    margin: auto;
+    background: #cccccc;
+    margin-top: 30px;
+    width: 100%;
+    height: 550px;
+    
+}
+.botones{
+    font-family: Arial;
+    font-size: 15pt;
+    border-radius: 7px; 
+    color: white;
+    margin: 6px;
+    float: right;
+    width: 200px;
+    height: 70px;
+    background: #333;
+}
+.contenedor1{
+    width: 100%;
+    height: 0px;
+}
+.contenedor2{
+    padding-top: 270px;
+    width: 100%;
+    height: 0px;
+}
+.contenedor3{
+    padding-top: 390px;
+    width: 100%;
+    height: 0px;
+}
+.textArea{
+    width: 345px;
+    height: 80px;
+}
+
+.botoneslog{ 
+    font-family: Arial;
+    font-size: 15pt;
+    border-radius: 7px; 
+    color: white;
+    margin: 6px;
+    margin-top: 100px;
+    width: 200px;
+    height: 70px;
+    background: #333;
+}

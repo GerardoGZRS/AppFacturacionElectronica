@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../JS/Validaciones.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form action="/Factufacil/ReceptorGuardar" method="POST">
+            <fieldset><legend>
+                Formulario Receptor
+                </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Rfc: </label>
+                        </td>
+                        <td><input type="text" id="txtRfc" name="txtRfc" required="" placeholder="Ingresa el Rfc" pattern="[A-Z]{4}[0-9]{6}" title="Ingrese Correctamente el rfc" ></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label>Razón Social</label></td>
+                        <td><input type="text" id="txtRazonSocial" name="txtRazonSocial" required=""    placeholder="Ingresa la Razón Social" onkeypress="return soloLetras(event)"/></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>
+                    Domicilio Fiscal
+                </legend>
+                <table>
+                    <tr>
+                        <td><label>Calle: </label></td>
+                        <td><input type="text" id="txtCalle" name="txtCalle"  required="" placeholder="Ingrese la calle"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Numero Interior: </label></td>
+                        <td><input type="text" id="txtNumInt" name="txtNumInt" required="" placeholder="Ingrese el número interior" onkeypress="return justNumbers(event);"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Numero Exterior: </label></td>
+                        <td><input type="text" id="txtNumExt" name="txtNumExt" required="" placeholder="Ingrese el número exterior" onkeypress="return justNumbers(event);"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Colonia: </label></td>
+                        <td><input type="text" id="txtColonia" name="txtColonia" required="" placeholder="Ingrese la colonia" onkeypress="return soloLetras(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Codigo Postal: </label></td>
+                        <td><input type="number" id="txtCodigoPostal" name="txtCodigoPostal" required="" placeholder="Ingrese el codigo postal" onkeypress="return justNumbers(event);" pattern="[0-9]{5}" ></td>
+                    </tr>
+                    <tr>
+                        <td><label>Municipio: </label></td>
+                        <td><input type="text" id="txtMunicipio" name="txtMunicipio" required="" placeholder="Ingrese el municipio" onkeypress="return soloLetras(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Estado: </label></td>
+                        <td><input type="text" id="txtEstado" name="txtEstado" required="" placeholder="Ingrese el estado" onkeypress="return soloLetras(event)"></td>
+                    </tr>
+                    <tr>
+                        <td><label>País: </label></td>
+                        <td><input type="text" id="txtPais" name="txtPais" required="" placeholder="Ingrese el país" onkeypress="return soloLetras(event)"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" id="btnGuardar" value="Guardar" >
+        </form>
+    </body>
+</html>
